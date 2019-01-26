@@ -5,6 +5,7 @@ using UnityEngine;
 using Utilities.Inspector;
 
 using Semantic;
+using CustomInputs;
 
 namespace Game
 {
@@ -19,7 +20,24 @@ namespace Game
 
 		#region INITIALIZATION
 
+		void Awake()
+		{
+			InputManager.DoubleTapEvent += SaveSemanticFieldEvent;
+		}
 
+		void OnDestroy()
+		{
+			InputManager.DoubleTapEvent -= SaveSemanticFieldEvent;
+		}
+
+		#endregion
+
+		#region BEHAVIOURS
+
+		private void SaveSemanticFieldEvent ()
+		{
+			Debug.Log (currentSemanticField + " liked!");
+		}
 
 		#endregion
 
