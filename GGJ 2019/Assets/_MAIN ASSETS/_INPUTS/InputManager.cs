@@ -19,6 +19,9 @@ namespace CustomInputs
 
 		private bool longPressTriggered = false;
 
+		public static BasicDelegates.VoidDelegate DoubleTapEvent;
+		public static BasicDelegates.VoidDelegate LongPressEvent;
+
 		#endregion
 
 		#region UPDATES
@@ -59,12 +62,18 @@ namespace CustomInputs
 		{
 			longPressTriggered = true;
 			Debug.Log ("Long press");
+
+			if (LongPressEvent != null)
+				LongPressEvent();
 		}
 
 		private void DoubleTap()
 		{
 			doubleTapTime = -1;
 			Debug.Log ("Double tap");
+
+			if (DoubleTapEvent != null)
+				DoubleTapEvent();
 		}
 
 		#endregion
