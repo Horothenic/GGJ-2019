@@ -37,6 +37,8 @@ namespace Game
 		private void SaveSemanticFieldEvent ()
 		{
 			Debug.Log (currentSemanticField + " liked!");
+
+			Quests.QuestManager.AddSemanticData(currentSemanticField, 1);
 		}
 
 		#endregion
