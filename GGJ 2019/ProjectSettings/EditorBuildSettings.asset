@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 99c9720ab356a0642a771bea13969a05
+    path: Assets/_MAIN ASSETS/_SCENES/Headphones.unity
+    guid: 4dc87b3bff16944e99d418954cc8716d
+  - enabled: 1
+    path: Assets/_MAIN ASSETS/_SCENES/Intro.unity
+    guid: 640c5b2e25025438488024b74f9c18ab
+  - enabled: 1
+    path: Assets/_MAIN ASSETS/_SCENES/Main.unity
+    guid: 1fb4a0ad290a4c949abbfd5b6699d133
   m_configObjects: {}
