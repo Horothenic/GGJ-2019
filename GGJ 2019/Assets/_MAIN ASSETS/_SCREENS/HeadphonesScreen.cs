@@ -5,6 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 using Utilities.Transitions;
+using Utilities.Inspector;
 
 namespace Screens
 {
@@ -26,6 +27,9 @@ namespace Screens
 		[Header("SCREEN")]
 		[SerializeField] private string nextScreen = "";
 
+		[Header("STATES")]
+		[ReadOnly] [SerializeField] private bool clickEnable = false;
+
 		#endregion
 
 		#region INITIALIZATION
@@ -33,6 +37,18 @@ namespace Screens
 		void Start()
 		{
 			StartCoroutine(AppearCanvasGroupHeadphones());
+		}
+
+		#endregion
+
+		#region UPDATES
+		
+		void Update()
+		{
+			if (clickEnable && Input.GetKeyDown(KeyCode.Space))
+			{
+				GoToNextScreen();
+			}
 		}
 
 		#endregion
@@ -60,12 +76,12 @@ namespace Screens
 
 			yield return new WaitUntil(CheckIfAudioSourceIsNotPlaying);
 
-			SetButtonBehaviour();
+			EnableClick();
 		}
 
-		private void SetButtonBehaviour()
+		private void EnableClick()
 		{
-			button.onClick.AddListener(GoToNextScreen);
+			clickEnable = true;
 		}
 
 		private void GoToNextScreen()
