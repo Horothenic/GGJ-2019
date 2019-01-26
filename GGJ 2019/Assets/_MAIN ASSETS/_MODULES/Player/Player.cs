@@ -55,7 +55,7 @@ namespace Game
 
 		void OnTriggerExit(Collider collider)
 		{
-			if (collider.tag == "Player")
+			if (collider.tag == "Semantic Field")
 			{
 				SemanticField semanticField = collider.gameObject.GetComponentInChildren<SemanticField>();
 
