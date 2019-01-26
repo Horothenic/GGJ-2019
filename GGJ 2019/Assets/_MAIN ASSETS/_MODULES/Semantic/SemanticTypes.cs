@@ -4,16 +4,16 @@
 
 	public enum SemanticFields
 	{
-		Beach,
+		Playa,
 		Bar,
-		Office,
-		Stage,
-		Forest,
-		Park,
-		House,
-		School,
-		Stadium,
-		Street
+		Oficina,
+		Escenario,
+		Bosque,
+		Parque,
+		Casa,
+		Escuela,
+		Estadio,
+		Calle
 	}
 
 	#endregion

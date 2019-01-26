@@ -4,6 +4,8 @@ using UnityEngine;
 
 using Utilities.Inspector;
 
+using UnityStandardAssets.Characters.FirstPerson;
+
 using Semantic;
 using CustomInputs;
 
@@ -14,7 +16,13 @@ namespace Game
 		#region ATTRIBUTES
 
 		[Header("SEMANTIC")]
-		[ReadOnly] [SerializeField] private SemanticFields currentSemanticField = SemanticFields.Street;
+		[ReadOnly] [SerializeField] private SemanticFields currentSemanticField = SemanticFields.Calle;
+
+		[Header("REFERENCES")]
+		[SerializeField] private FirstPersonController firstPersonController;
+
+		private Vector3 originalPosition;
+		private Vector3 originalRotation;
 
 		#endregion
 
@@ -23,6 +31,9 @@ namespace Game
 		void Awake()
 		{
 			InputManager.DoubleTapEvent += SaveSemanticFieldEvent;
+
+			originalPosition = transform.position;
+			originalRotation = transform.eulerAngles;
 		}
 
 		void OnDestroy()
@@ -34,11 +45,27 @@ namespace Game
 
 		#region BEHAVIOURS
 
-		private void SaveSemanticFieldEvent ()
+		private void SaveSemanticFieldEvent()
 		{
 			Debug.Log (currentSemanticField + " liked!");
 
 			Quests.QuestManager.AddSemanticData(currentSemanticField, 1);
+		}
+
+		public void EnableMovement()
+		{
+			firstPersonController.enabled = true;
+		}
+
+		public void DisableMovement()
+		{
+			firstPersonController.enabled = false;
+		}
+
+		public void ResetPosition()
+		{
+			transform.position = originalPosition;
+			transform.eulerAngles = originalRotation;
 		}
 
 		#endregion
@@ -62,7 +89,7 @@ namespace Game
 				SemanticField semanticField = collider.gameObject.GetComponentInChildren<SemanticField>();
 
 				if (currentSemanticField == semanticField.GetSemanticField)
-					currentSemanticField = SemanticFields.Street;
+					currentSemanticField = SemanticFields.Calle;
 			}
 		}
 

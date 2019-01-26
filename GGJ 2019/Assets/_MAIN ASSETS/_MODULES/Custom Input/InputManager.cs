@@ -22,6 +22,8 @@ namespace CustomInputs
 		public static BasicDelegates.VoidDelegate DoubleTapEvent;
 		public static BasicDelegates.VoidDelegate LongPressEvent;
 
+		private int taps = 0;
+
 		#endregion
 
 		#region UPDATES
@@ -45,7 +47,12 @@ namespace CustomInputs
 			{
 				if (doubleTapTime > 0 && Time.time <= doubleTapTime)
 				{
-					DoubleTap();
+					taps ++;
+
+					if (taps == 2)
+					{
+						DoubleTap();
+					}
 				}
 
 				doubleTapTime = Time.time + doubleTapThreshold;
@@ -69,6 +76,7 @@ namespace CustomInputs
 
 		private void DoubleTap()
 		{
+			taps = 0;
 			doubleTapTime = -1;
 			Debug.Log ("Double tap");
 

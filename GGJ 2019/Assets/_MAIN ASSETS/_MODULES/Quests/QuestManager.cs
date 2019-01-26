@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 using Utilities.Inspector;
 
@@ -21,6 +22,26 @@ namespace Quests
 
 		public delegate void SemanticDelegate (SemanticFields type, int increment);
 		public static SemanticDelegate AddSemanticData;
+
+		#endregion
+
+		#region PROPERTIES
+
+		public string CurrentQuest { get { return currentQuest; } }
+
+		public int[] Top3SemanticFieldsIndexes
+		{
+			get
+			{
+				var indexArray = semanticData
+                   .Select((value, index) => new { value, index })
+                   .OrderByDescending(item => item.value)
+                   .Take(3)
+                   .Select(item => item.index)
+                   .ToArray();
+				return indexArray;
+			}
+		}
 
 		#endregion
 
@@ -46,10 +67,10 @@ namespace Quests
 
 		#region BEHAVIOURS
 
-		private void ChangeQuest()
+		public void ChangeQuest()
 		{
 			semanticData = new int[10];
-			currentQuest = quests[Random.Range(1, quests.Length)];
+			currentQuest = quests[1];
 		}
 
 		public void IncrementData (SemanticFields type, int increment)
