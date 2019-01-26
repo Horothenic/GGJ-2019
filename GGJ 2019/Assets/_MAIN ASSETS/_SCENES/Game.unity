@@ -918,42 +918,44 @@ MonoBehaviour:
   player: {fileID: 930316503}
   questManager: {fileID: 300054097}
   audioSource: {fileID: 545992170}
-  questMessage: {fileID: 8300000, guid: 505db1a2e3d9349888b7434be4af5f92, type: 3}
+  questMessage:
+  - {fileID: 8300000, guid: 69900599c777d4f6b89cd4dcbcf1aa9f, type: 3}
+  - {fileID: 8300000, guid: 646713784fa7a404cacbcc07337d6aaf, type: 3}
   semanticFirst:
-  - {fileID: 8300000, guid: 505db1a2e3d9349888b7434be4af5f92, type: 3}
-  - {fileID: 8300000, guid: 3d601056a3f8d4c5da7279e67c93bc0b, type: 3}
-  - {fileID: 8300000, guid: 78c267bf06c694a0ba978f105172511f, type: 3}
-  - {fileID: 8300000, guid: 4e1566aff4c344c92a360bc4bbd6e63b, type: 3}
-  - {fileID: 8300000, guid: 3778ce9f83fb24c278c0c8a73ce5a6bc, type: 3}
-  - {fileID: 8300000, guid: 69f9b3788fec44e6586baa4269e1a425, type: 3}
-  - {fileID: 8300000, guid: ae90c451bdb284d17b52e1d1f81d286f, type: 3}
-  - {fileID: 8300000, guid: fe324e4c245be421f83604554ca1a712, type: 3}
-  - {fileID: 8300000, guid: f42ff6b0fa93e48d2823dcf6ff8a8ea9, type: 3}
-  - {fileID: 8300000, guid: 2c15b7ec49e024afea4890b2aa407bcc, type: 3}
+  - {fileID: 8300000, guid: 4cc1ec2811c0548798ea2278589e1c42, type: 3}
+  - {fileID: 8300000, guid: 955a65d147f434306846bb87d58434c3, type: 3}
+  - {fileID: 8300000, guid: 4d2c4d9c56b7b4a84bb5f972ed22fdec, type: 3}
+  - {fileID: 8300000, guid: 4328f721f7ac649169f011af2b698dbd, type: 3}
+  - {fileID: 8300000, guid: f7d655b106bf14b2ca0abaf249d1fdc1, type: 3}
+  - {fileID: 8300000, guid: 962af9e9d2a214d808f0ba02368c44e0, type: 3}
+  - {fileID: 8300000, guid: 81b9490cd9f99423a9fb9b3108a6fb11, type: 3}
+  - {fileID: 8300000, guid: 150080ebed3ff42f3a95a31a56e92da9, type: 3}
+  - {fileID: 8300000, guid: b954b910f8f264916a0fe360acee58e7, type: 3}
+  - {fileID: 8300000, guid: b2b4bd20482d54edeb4032a44ab77ba3, type: 3}
   semanticSecond:
-  - {fileID: 8300000, guid: 505db1a2e3d9349888b7434be4af5f92, type: 3}
-  - {fileID: 8300000, guid: 3d601056a3f8d4c5da7279e67c93bc0b, type: 3}
-  - {fileID: 8300000, guid: 78c267bf06c694a0ba978f105172511f, type: 3}
-  - {fileID: 8300000, guid: 4e1566aff4c344c92a360bc4bbd6e63b, type: 3}
-  - {fileID: 8300000, guid: 3778ce9f83fb24c278c0c8a73ce5a6bc, type: 3}
-  - {fileID: 8300000, guid: 69f9b3788fec44e6586baa4269e1a425, type: 3}
-  - {fileID: 8300000, guid: ae90c451bdb284d17b52e1d1f81d286f, type: 3}
-  - {fileID: 8300000, guid: fe324e4c245be421f83604554ca1a712, type: 3}
-  - {fileID: 8300000, guid: f42ff6b0fa93e48d2823dcf6ff8a8ea9, type: 3}
-  - {fileID: 8300000, guid: 2c15b7ec49e024afea4890b2aa407bcc, type: 3}
+  - {fileID: 8300000, guid: 4aa80f3481ec4433aa29a144368342eb, type: 3}
+  - {fileID: 8300000, guid: b226b6a08a4ac407e98f208769b9f86e, type: 3}
+  - {fileID: 8300000, guid: fd014d109d1f345c1b0fc8fbee9645a5, type: 3}
+  - {fileID: 8300000, guid: 10a4aae0184f84ca9a158f57de9ad34c, type: 3}
+  - {fileID: 8300000, guid: 26637c0a4358a477b874ea37e07ab83b, type: 3}
+  - {fileID: 8300000, guid: 6751f20faccbe4353ad17314802389d2, type: 3}
+  - {fileID: 8300000, guid: 32ee79589109744d484cef1def06ae7a, type: 3}
+  - {fileID: 8300000, guid: abe0a9a2bb5d74cc8a5ff04b74f3f4c9, type: 3}
+  - {fileID: 8300000, guid: b1b9bb518a1c74657a039287d6eff45b, type: 3}
+  - {fileID: 8300000, guid: 923eaca09c47a45188b8c2bb43d5ccbc, type: 3}
   semanticThird:
-  - {fileID: 8300000, guid: 505db1a2e3d9349888b7434be4af5f92, type: 3}
-  - {fileID: 8300000, guid: 3d601056a3f8d4c5da7279e67c93bc0b, type: 3}
-  - {fileID: 8300000, guid: 78c267bf06c694a0ba978f105172511f, type: 3}
-  - {fileID: 8300000, guid: 4e1566aff4c344c92a360bc4bbd6e63b, type: 3}
-  - {fileID: 8300000, guid: 3778ce9f83fb24c278c0c8a73ce5a6bc, type: 3}
-  - {fileID: 8300000, guid: 69f9b3788fec44e6586baa4269e1a425, type: 3}
-  - {fileID: 8300000, guid: ae90c451bdb284d17b52e1d1f81d286f, type: 3}
-  - {fileID: 8300000, guid: fe324e4c245be421f83604554ca1a712, type: 3}
-  - {fileID: 8300000, guid: f42ff6b0fa93e48d2823dcf6ff8a8ea9, type: 3}
-  - {fileID: 8300000, guid: 2c15b7ec49e024afea4890b2aa407bcc, type: 3}
-  reflexion: {fileID: 8300000, guid: 3d601056a3f8d4c5da7279e67c93bc0b, type: 3}
-  quest2Message: {fileID: 8300000, guid: 78c267bf06c694a0ba978f105172511f, type: 3}
+  - {fileID: 8300000, guid: 57ec4ec52c7734ca98fc4c8731027217, type: 3}
+  - {fileID: 8300000, guid: 2da0e93c51a8d464f97b0fa2893e0f0e, type: 3}
+  - {fileID: 8300000, guid: a458dfc531f5b47e9b95b0681a265508, type: 3}
+  - {fileID: 8300000, guid: 184b51e1c25d943f2984e6d5b3add694, type: 3}
+  - {fileID: 8300000, guid: 0893cda5b1cda49b0870e1dd970fa6fc, type: 3}
+  - {fileID: 8300000, guid: 3604ba4fdf98e4baf9e9763990214370, type: 3}
+  - {fileID: 8300000, guid: 4523e1dba5b8e43d9abb24c4afbb0887, type: 3}
+  - {fileID: 8300000, guid: 9a6cb883781744d6d8b99169dcf3da4b, type: 3}
+  - {fileID: 8300000, guid: 00cea5b99b5484bc9b8005b33135b43e, type: 3}
+  - {fileID: 8300000, guid: 1d3666fdc6e984327aa3d95e3cf32b14, type: 3}
+  reflexion: {fileID: 8300000, guid: 7c30eb61df4a749d28867302a3284bab, type: 3}
+  quest2Message: {fileID: 8300000, guid: 8d97923ada7df445db8436ba20a1c2e3, type: 3}
   questMessageText: {fileID: 953023500}
   semanticFirstText: {fileID: 143830699}
   semanticSecondText: {fileID: 656971272}
@@ -967,7 +969,6 @@ MonoBehaviour:
   reflexionCanvasGroup: {fileID: 1335835374}
   quest2MessageCanvasGroup: {fileID: 467705469}
   blackScreen: {fileID: 856690115}
-  restartButton: {fileID: 856690118}
 --- !u!82 &545992170
 AudioSource:
   m_ObjectHideFlags: 0

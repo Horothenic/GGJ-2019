@@ -22,7 +22,7 @@ namespace Results
 		[SerializeField] private AudioSource audioSource;
 
 		[Header("AUDIOS")]
-		[SerializeField] private AudioClip questMessage;
+		[SerializeField] private AudioClip[] questMessage;
 		[SerializeField] private AudioClip[] semanticFirst;
 		[SerializeField] private AudioClip[] semanticSecond;
 		[SerializeField] private AudioClip[] semanticThird;
@@ -94,7 +94,7 @@ namespace Results
 			questMessageText.text = "El " + questManager.CurrentQuest + " para ti suena a:";
 			Transition.FadeInCanvasGroup(questMessageCanvasGroup, 0.3f);
 
-			audioSource.clip = questMessage;
+			audioSource.clip = questMessage[questManager.CurrentQuest == "hogar" ? 0 : 1];
 			audioSource.PlayOneShot(audioSource.clip);
 			yield return new WaitUntil(CheckIfAudioSourceIsNotPlaying);
 

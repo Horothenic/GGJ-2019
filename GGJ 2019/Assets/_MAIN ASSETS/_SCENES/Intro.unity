@@ -561,13 +561,14 @@ MonoBehaviour:
   - 
   - 
   - 
-  - "Me alegra que est\xE9s consciente. En este momento est\xE1s en coma, pero me
-    estoy comunicando contigo a trav\xE9s de tu corteza cerebral auditiva con micropulsos
-    el\xE9ctricos. Para volver del coma, necesitas recuperar los recuerdos auditivos
-    que te hagan recordar <strong>lo que significa tu hogar</strong>."
-  - "Utiliza las teclas de direcci\xF3n de tu teclado para moverte."
+  - "\xBFMe escuchas?"
+  - "En este momento est\xE1s en coma, pero me estoy comunicando contigo a trav\xE9s
+    de tu corteza cerebral auditiva con micropulsos el\xE9ctricos."
+  - "Para volver del coma, necesitas recuperar los est\xEDmulos auditivos que te hagan
+    recordar lo que significa tu hogar."
+  - "Utiliza las teclas de direcci\xF3n de tu teclado para moverte por tu cerebro."
   - "Oprime la barra espaciadora dos veces r\xE1pidamente para guardar el sonido que
-    se escucha m\xE1s fuerte en tu memoria para reconstruir lo que eres."
+    te recuerda tu hogar y  poder reconstruir quien eres. "
   - "Mant\xE9n presionada la barra espaciadora durante 3 segundos para finalizar la
     exploraci\xF3n de tu cerebro."
   audioclips:
@@ -577,10 +578,12 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4e1566aff4c344c92a360bc4bbd6e63b, type: 3}
   - {fileID: 8300000, guid: 3778ce9f83fb24c278c0c8a73ce5a6bc, type: 3}
   - {fileID: 8300000, guid: 69f9b3788fec44e6586baa4269e1a425, type: 3}
-  - {fileID: 8300000, guid: ae90c451bdb284d17b52e1d1f81d286f, type: 3}
-  - {fileID: 8300000, guid: fe324e4c245be421f83604554ca1a712, type: 3}
-  - {fileID: 8300000, guid: f42ff6b0fa93e48d2823dcf6ff8a8ea9, type: 3}
-  - {fileID: 8300000, guid: 2c15b7ec49e024afea4890b2aa407bcc, type: 3}
+  - {fileID: 8300000, guid: fe6824b3d151a4f8bbe90f1856627ee5, type: 3}
+  - {fileID: 8300000, guid: 9d4cafcd85caa43748dd6ad28575681d, type: 3}
+  - {fileID: 8300000, guid: 6c4675a9c72ba4bbb8b5b6be62efaeff, type: 3}
+  - {fileID: 8300000, guid: db7814d6859db40a19dc2649e3dff491, type: 3}
+  - {fileID: 8300000, guid: 5f105727010cc4fab96ac690eee891b5, type: 3}
+  - {fileID: 8300000, guid: 2ccb9abf4eee04dff984bb1291e0f7bc, type: 3}
   canvasGroup: {fileID: 1405079250}
   text: {fileID: 1835205627}
   audioSource: {fileID: 1143803915}
