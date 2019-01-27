@@ -280,8 +280,9 @@ MonoBehaviour:
   canvasGroupClick: {fileID: 1629970241}
   button: {fileID: 2124827567}
   audioSource: {fileID: 1143803915}
-  audioClipHeadphones: {fileID: 8300000, guid: 85c2fc2a21d0b457f93c5b1feb85b0d6, type: 3}
-  audioClipClick: {fileID: 8300000, guid: 981047ca74b7544df9eb691c0b90b4e9, type: 3}
+  audioClipHeadphones: {fileID: 8300000, guid: 0a1785e348a3b4a478c48da0c7817e6f, type: 3}
+  audioClipClick: {fileID: 8300000, guid: f3b16917ce995475d970203faa6dce16, type: 3}
+  tap: {fileID: 8300000, guid: e80d86294b78c468989f8fd157eda29b, type: 3}
   nextScreen: Intro
   clickEnable: 0
 --- !u!1 &1143803911

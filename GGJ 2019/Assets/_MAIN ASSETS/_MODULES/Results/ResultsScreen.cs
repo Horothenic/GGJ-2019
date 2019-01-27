@@ -28,6 +28,7 @@ namespace Results
 		[SerializeField] private AudioClip[] semanticThird;
 		[SerializeField] private AudioClip reflexion;
 		[SerializeField] private AudioClip quest2Message;
+		[SerializeField] private AudioClip tap;
 
 		[Header("TEXTS")]
 		[SerializeField] private Text questMessageText;
@@ -89,6 +90,8 @@ namespace Results
 
 		private IEnumerator MessageSequence()
 		{
+			player.MoveAway();
+
 			// Quest title //
 
 			questMessageText.text = "El " + questManager.CurrentQuest + " para ti suena a:";
@@ -156,6 +159,9 @@ namespace Results
 
 		private void ReloadGame ()
 		{
+			audioSource.clip = tap;
+			audioSource.PlayOneShot(audioSource.clip);
+
 			buttonEnable = false;
 
 			questManager.ChangeQuest();

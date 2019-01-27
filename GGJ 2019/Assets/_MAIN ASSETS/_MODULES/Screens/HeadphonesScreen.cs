@@ -23,6 +23,7 @@ namespace Screens
 		[SerializeField] private AudioSource audioSource;
 		[SerializeField] private AudioClip audioClipHeadphones;
 		[SerializeField] private AudioClip audioClipClick;
+		[SerializeField] private AudioClip tap;
 
 		[Header("SCREEN")]
 		[SerializeField] private string nextScreen = "";
@@ -86,6 +87,9 @@ namespace Screens
 
 		private void GoToNextScreen()
 		{
+			audioSource.clip = tap;
+			audioSource.PlayOneShot(audioSource.clip);
+
 			Transition.FadeOutCanvasGroup (canvasGroup, 0.7f, false, () => SceneManager.LoadScene(nextScreen));
 		}
 

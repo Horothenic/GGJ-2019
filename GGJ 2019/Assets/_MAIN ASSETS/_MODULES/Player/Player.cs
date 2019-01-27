@@ -68,6 +68,11 @@ namespace Game
 			transform.eulerAngles = originalRotation;
 		}
 
+		public void MoveAway()
+		{
+			transform.position = Vector3.one * 10000;
+		}
+
 		#endregion
 
 		#region COLLISION_BEHAVIOURS
