@@ -324,7 +324,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.5
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -556,28 +556,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   texts:
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
   - "\xBFMe escuchas?"
   - "En este momento est\xE1s en coma, pero me estoy comunicando contigo a trav\xE9s
-    de tu corteza cerebral auditiva con micropulsos el\xE9ctricos."
+    de tu corteza cerebral auditiva."
   - "Para volver del coma, necesitas recuperar los est\xEDmulos auditivos que te hagan
     recordar lo que significa tu hogar."
   - "Utiliza las teclas de direcci\xF3n de tu teclado para moverte por tu cerebro."
-  - "Oprime la barra espaciadora dos veces r\xE1pidamente para guardar el sonido que
-    te recuerda tu hogar y  poder reconstruir quien eres. "
+  - "Presiona la barra espaciadora dos veces r\xE1pidamente cada vez que desees guardar
+    un sonido que te recuerde a tu hogar."
   - "Mant\xE9n presionada la barra espaciadora durante 3 segundos para finalizar la
-    exploraci\xF3n de tu cerebro."
+    exploraci\xF3n de tu cerebro y recobrar la conciencia."
   audioclips:
-  - {fileID: 8300000, guid: 505db1a2e3d9349888b7434be4af5f92, type: 3}
-  - {fileID: 8300000, guid: 3d601056a3f8d4c5da7279e67c93bc0b, type: 3}
-  - {fileID: 8300000, guid: 78c267bf06c694a0ba978f105172511f, type: 3}
-  - {fileID: 8300000, guid: 4e1566aff4c344c92a360bc4bbd6e63b, type: 3}
-  - {fileID: 8300000, guid: 3778ce9f83fb24c278c0c8a73ce5a6bc, type: 3}
-  - {fileID: 8300000, guid: 69f9b3788fec44e6586baa4269e1a425, type: 3}
+  - {fileID: 8300000, guid: 633cf9cd253d6432bbb8042a3d8a7234, type: 3}
   - {fileID: 8300000, guid: fe6824b3d151a4f8bbe90f1856627ee5, type: 3}
   - {fileID: 8300000, guid: 9d4cafcd85caa43748dd6ad28575681d, type: 3}
   - {fileID: 8300000, guid: 6c4675a9c72ba4bbb8b5b6be62efaeff, type: 3}
@@ -648,7 +638,7 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 79
+    m_MaxSize: 55
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
