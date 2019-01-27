@@ -568,12 +568,12 @@ MonoBehaviour:
     exploraci\xF3n de tu cerebro y recobrar la conciencia."
   audioclips:
   - {fileID: 8300000, guid: 633cf9cd253d6432bbb8042a3d8a7234, type: 3}
-  - {fileID: 8300000, guid: fe6824b3d151a4f8bbe90f1856627ee5, type: 3}
-  - {fileID: 8300000, guid: 9d4cafcd85caa43748dd6ad28575681d, type: 3}
-  - {fileID: 8300000, guid: 6c4675a9c72ba4bbb8b5b6be62efaeff, type: 3}
-  - {fileID: 8300000, guid: db7814d6859db40a19dc2649e3dff491, type: 3}
-  - {fileID: 8300000, guid: 5f105727010cc4fab96ac690eee891b5, type: 3}
-  - {fileID: 8300000, guid: 2ccb9abf4eee04dff984bb1291e0f7bc, type: 3}
+  - {fileID: 8300000, guid: db2dc38c2aee34bbcac53e7d0de3802d, type: 3}
+  - {fileID: 8300000, guid: 79714962c59a54f6090252909beb9dc2, type: 3}
+  - {fileID: 8300000, guid: 77962398ed65546eebd3dd8e3ab1404d, type: 3}
+  - {fileID: 8300000, guid: ccc301c4c5a3343f29d3fb8c114e86d4, type: 3}
+  - {fileID: 8300000, guid: 22e0855b11db1463c89215c52c171c68, type: 3}
+  - {fileID: 8300000, guid: 658be092b783749c7b7822c94d1e7c35, type: 3}
   canvasGroup: {fileID: 1405079250}
   text: {fileID: 1835205627}
   audioSource: {fileID: 1143803915}
