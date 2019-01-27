@@ -6,6 +6,14 @@ namespace GGJ
 {
 	public class EnterTrigger : MonoBehaviour 
 	{
+		#region ATTRIBUTES
+
+		[Header("TWEAKS")]
+		[SerializeField] private bool enterEnabled = false;
+		[SerializeField] private bool exitEnabled = false;
+
+		#endregion
+
 		#region INTERNAL
 
 		private AudioSource audioSource;
@@ -25,7 +33,7 @@ namespace GGJ
 
 		void OnTriggerEnter(Collider collider)
 		{
-			if (collider.tag == "Player" && !audioSource.isPlaying)
+			if (enterEnabled && collider.tag == "Player" && !audioSource.isPlaying)
 			{
 				audioSource.enabled = false;
 				audioSource.enabled = true;
@@ -34,7 +42,7 @@ namespace GGJ
 
 		void OnTriggerExit(Collider collider)
 		{
-			if (collider.tag == "Player" && !audioSource.isPlaying)
+			if (exitEnabled && collider.tag == "Player" && !audioSource.isPlaying)
 			{
 				audioSource.enabled = false;
 				audioSource.enabled = true;

@@ -26,7 +26,7 @@ GameObject:
   - component: {fileID: 114030581607682368}
   - component: {fileID: 114828145994397796}
   m_Layer: 0
-  m_Name: Enter
+  m_Name: Exit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -206,8 +206,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a3881193619145f49c3fe689b104ec1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enterEnabled: 1
-  exitEnabled: 0
+  enterEnabled: 0
+  exitEnabled: 1
 --- !u!114 &114828145994397796
 MonoBehaviour:
   m_ObjectHideFlags: 1
