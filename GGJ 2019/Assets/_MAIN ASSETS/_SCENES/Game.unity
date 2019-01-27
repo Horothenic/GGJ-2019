@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.438453, g: 0.48653424, b: 0.56680924, a: 1}
+  m_IndirectSpecularColor: {r: 0.4384533, g: 0.48653448, b: 0.5668102, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2446,43 +2446,43 @@ MonoBehaviour:
   questManager: {fileID: 300054097}
   audioSource: {fileID: 545992170}
   questMessage:
-  - {fileID: 8300000, guid: 69900599c777d4f6b89cd4dcbcf1aa9f, type: 3}
-  - {fileID: 8300000, guid: 646713784fa7a404cacbcc07337d6aaf, type: 3}
+  - {fileID: 8300000, guid: ebe99898642fb44fba44a5d43a8edbe3, type: 3}
+  - {fileID: 8300000, guid: 3b6a6ecf5be8d45689b9ff90c645694d, type: 3}
   semanticFirst:
-  - {fileID: 8300000, guid: 4cc1ec2811c0548798ea2278589e1c42, type: 3}
-  - {fileID: 8300000, guid: 955a65d147f434306846bb87d58434c3, type: 3}
-  - {fileID: 8300000, guid: 4d2c4d9c56b7b4a84bb5f972ed22fdec, type: 3}
-  - {fileID: 8300000, guid: 4328f721f7ac649169f011af2b698dbd, type: 3}
-  - {fileID: 8300000, guid: f7d655b106bf14b2ca0abaf249d1fdc1, type: 3}
-  - {fileID: 8300000, guid: 962af9e9d2a214d808f0ba02368c44e0, type: 3}
-  - {fileID: 8300000, guid: 81b9490cd9f99423a9fb9b3108a6fb11, type: 3}
-  - {fileID: 8300000, guid: 150080ebed3ff42f3a95a31a56e92da9, type: 3}
-  - {fileID: 8300000, guid: b954b910f8f264916a0fe360acee58e7, type: 3}
-  - {fileID: 8300000, guid: b2b4bd20482d54edeb4032a44ab77ba3, type: 3}
+  - {fileID: 8300000, guid: f0709507659524a82b7684205b83886c, type: 3}
+  - {fileID: 8300000, guid: a2ceda65ac4544981bd2d9a670b319df, type: 3}
+  - {fileID: 8300000, guid: 43208ffb7c90d4205b97eaabff21b682, type: 3}
+  - {fileID: 8300000, guid: 0d09c71d656ac43c99289460c84220a4, type: 3}
+  - {fileID: 8300000, guid: d06577e4229f444678f945dfed4f82ae, type: 3}
+  - {fileID: 8300000, guid: 111524de3422d403a863e851e7dfc7cd, type: 3}
+  - {fileID: 8300000, guid: 2ffb0742bfe5c4022994ee59cc40a07d, type: 3}
+  - {fileID: 8300000, guid: 39fddb9807e644c539c0ac18ce658e6a, type: 3}
+  - {fileID: 8300000, guid: b050cc678154c4923aa686b75f752731, type: 3}
+  - {fileID: 8300000, guid: 15520246c63db49d39e0767c908a3b0e, type: 3}
   semanticSecond:
-  - {fileID: 8300000, guid: 4aa80f3481ec4433aa29a144368342eb, type: 3}
-  - {fileID: 8300000, guid: b226b6a08a4ac407e98f208769b9f86e, type: 3}
-  - {fileID: 8300000, guid: fd014d109d1f345c1b0fc8fbee9645a5, type: 3}
-  - {fileID: 8300000, guid: 10a4aae0184f84ca9a158f57de9ad34c, type: 3}
-  - {fileID: 8300000, guid: 26637c0a4358a477b874ea37e07ab83b, type: 3}
-  - {fileID: 8300000, guid: 6751f20faccbe4353ad17314802389d2, type: 3}
-  - {fileID: 8300000, guid: 32ee79589109744d484cef1def06ae7a, type: 3}
-  - {fileID: 8300000, guid: abe0a9a2bb5d74cc8a5ff04b74f3f4c9, type: 3}
-  - {fileID: 8300000, guid: b1b9bb518a1c74657a039287d6eff45b, type: 3}
-  - {fileID: 8300000, guid: 923eaca09c47a45188b8c2bb43d5ccbc, type: 3}
+  - {fileID: 8300000, guid: 471a755f4e08a480a974d3841e9453f8, type: 3}
+  - {fileID: 8300000, guid: bce4d614fd173429a8801de56bfc8cf0, type: 3}
+  - {fileID: 8300000, guid: ad58bc7a00cab463a903c479140879f0, type: 3}
+  - {fileID: 8300000, guid: 2f78fb809fff14334bdf1bc06b839846, type: 3}
+  - {fileID: 8300000, guid: 9a3b7f75de4a948f7ba5bf7c9fadeb63, type: 3}
+  - {fileID: 8300000, guid: 006632fdd49b442d6bb6bb116642e7ed, type: 3}
+  - {fileID: 8300000, guid: aa9c06fa59f5e499cb9aa392926adf1c, type: 3}
+  - {fileID: 8300000, guid: cbc480c8376bf458990cb79bee2eebf1, type: 3}
+  - {fileID: 8300000, guid: 26691ea4026674d85a9e9c4ff47f89c3, type: 3}
+  - {fileID: 8300000, guid: a51cd27ac072c4ddab5a2e47ed912324, type: 3}
   semanticThird:
-  - {fileID: 8300000, guid: 57ec4ec52c7734ca98fc4c8731027217, type: 3}
-  - {fileID: 8300000, guid: 2da0e93c51a8d464f97b0fa2893e0f0e, type: 3}
-  - {fileID: 8300000, guid: a458dfc531f5b47e9b95b0681a265508, type: 3}
-  - {fileID: 8300000, guid: 184b51e1c25d943f2984e6d5b3add694, type: 3}
-  - {fileID: 8300000, guid: 0893cda5b1cda49b0870e1dd970fa6fc, type: 3}
-  - {fileID: 8300000, guid: 3604ba4fdf98e4baf9e9763990214370, type: 3}
-  - {fileID: 8300000, guid: 4523e1dba5b8e43d9abb24c4afbb0887, type: 3}
-  - {fileID: 8300000, guid: 9a6cb883781744d6d8b99169dcf3da4b, type: 3}
-  - {fileID: 8300000, guid: 00cea5b99b5484bc9b8005b33135b43e, type: 3}
-  - {fileID: 8300000, guid: 1d3666fdc6e984327aa3d95e3cf32b14, type: 3}
-  reflexion: {fileID: 8300000, guid: 7c30eb61df4a749d28867302a3284bab, type: 3}
-  quest2Message: {fileID: 8300000, guid: 8d97923ada7df445db8436ba20a1c2e3, type: 3}
+  - {fileID: 8300000, guid: 8f842a2773231466aaa127fc0841c0a8, type: 3}
+  - {fileID: 8300000, guid: 80d1a5a0827ab4899be03da1322cca34, type: 3}
+  - {fileID: 8300000, guid: 9ec805c0bef3d45a0bdb9a1680a373c3, type: 3}
+  - {fileID: 8300000, guid: 5c9b3c73376b54a83a57c399172b7a7a, type: 3}
+  - {fileID: 8300000, guid: 838e917db0c814f9eb915f348a0c1797, type: 3}
+  - {fileID: 8300000, guid: 154b397b84b6d4c12bee07eb923951e6, type: 3}
+  - {fileID: 8300000, guid: 7f7257e2ac8184b4caa2307742e2a204, type: 3}
+  - {fileID: 8300000, guid: af03df610fa31495695b2d8f6df6ea41, type: 3}
+  - {fileID: 8300000, guid: 7079d116efa2046e6869722acdfeeda7, type: 3}
+  - {fileID: 8300000, guid: 54c03a35f037e49dea538395b55f9d73, type: 3}
+  reflexion: {fileID: 8300000, guid: 85802e3303f1a4b979c0bfffa731482c, type: 3}
+  quest2Message: {fileID: 8300000, guid: 63b97831ab6114b62b790dc5a8889671, type: 3}
   questMessageText: {fileID: 953023500}
   semanticFirstText: {fileID: 143830699}
   semanticSecondText: {fileID: 656971272}
