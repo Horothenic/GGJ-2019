@@ -12,7 +12,7 @@ namespace CustomInputs
 
 		[Header("TWEAKS")]
 		[SerializeField] private float doubleTapThreshold = 0.2f;
-		[SerializeField] private float longPressThreshold = 3f;
+		[SerializeField] private float longPressThreshold = 1.5f;
 
 		[Header("AUDIO")]
 		[SerializeField] private AudioSource audioSource;
