@@ -22,6 +22,7 @@ namespace Screens
 
 		[Header("AUDIO")]
 		[SerializeField] private AudioSource audioSource;
+		[SerializeField] private AudioSource extaAudioSource;
 
 		[Header("SCREEN")]
 		[SerializeField] private string nextScreen = "";
@@ -43,6 +44,11 @@ namespace Screens
 		{
 			for (int i = 0 ; i < texts.Length; i++)
 			{
+				if (i == 1)
+				{
+					extaAudioSource.enabled = true;
+				}
+
 				if (texts[i] != "")
 				{
 					text.text = texts[i];

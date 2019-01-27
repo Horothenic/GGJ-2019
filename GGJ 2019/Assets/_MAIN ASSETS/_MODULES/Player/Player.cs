@@ -20,9 +20,15 @@ namespace Game
 
 		[Header("REFERENCES")]
 		[SerializeField] private FirstPersonController firstPersonController;
+		[SerializeField] private AudioSource audioSource;
+
+		[Header("AUDIOS")]
+		[SerializeField] private AudioClip wallHit;
 
 		private Vector3 originalPosition;
 		private Vector3 originalRotation;
+
+		private bool enableHit = true;
 
 		#endregion
 
@@ -73,6 +79,12 @@ namespace Game
 			transform.position = Vector3.one * 10000;
 		}
 
+		private IEnumerator WaitForHit()
+		{
+			yield return new WaitForSeconds (0.8f);
+			enableHit = true;
+		}
+
 		#endregion
 
 		#region COLLISION_BEHAVIOURS
@@ -85,6 +97,14 @@ namespace Game
 
 				currentSemanticField = semanticField.GetSemanticField;
 			}
+		}
+
+		void OnCollisionEnter(Collision collision)
+		{
+			audioSource.clip = wallHit;
+			audioSource.PlayOneShot(audioSource.clip);
+			audioSource.enabled = false;
+			audioSource.enabled = true;
 		}
 
 		void OnTriggerExit(Collider collider)
