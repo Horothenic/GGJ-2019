@@ -15,8 +15,8 @@ namespace CustomInputs
 		[SerializeField] private float longPressThreshold = 3f;
 
 		[Header("AUDIO")]
+		[SerializeField] private AudioSource audioSource;
 		[SerializeField] private AudioClip doubleTapSound;
-		[SerializeField] private AudioClip longPressSound;
 
 		private float doubleTapTime = -1;
 		private float longPressTime;
@@ -27,21 +27,6 @@ namespace CustomInputs
 		public static BasicDelegates.VoidDelegate LongPressEvent;
 
 		private int taps = 0;
-
-		#endregion
-
-		#region INTERNAL
-
-		private AudioSource audioSource;
-
-		#endregion
-
-		#region INITIALIZATION
-
-		void Awake()
-		{
-			audioSource = GetComponentInChildren<AudioSource>();
-		}
 
 		#endregion
 
@@ -64,11 +49,11 @@ namespace CustomInputs
 
 			if (Input.GetKeyUp(KeyCode.Space))
 			{
+				taps ++;
+
 				if (doubleTapTime > 0 && Time.time <= doubleTapTime)
 				{
-					taps ++;
-
-					if (taps == 2)
+					if (taps >= 2)
 					{
 						DoubleTap();
 					}
@@ -88,9 +73,6 @@ namespace CustomInputs
 		{
 			longPressTriggered = true;
 			Debug.Log ("Long press");
-
-			audioSource.clip = longPressSound;
-			audioSource.PlayOneShot(audioSource.clip);
 
 			if (LongPressEvent != null)
 				LongPressEvent();

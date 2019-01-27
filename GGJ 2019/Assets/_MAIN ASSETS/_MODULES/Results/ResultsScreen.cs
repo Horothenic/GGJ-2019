@@ -29,6 +29,7 @@ namespace Results
 		[SerializeField] private AudioClip reflexion;
 		[SerializeField] private AudioClip quest2Message;
 		[SerializeField] private AudioClip tap;
+		[SerializeField] private AudioClip endGame;
 
 		[Header("TEXTS")]
 		[SerializeField] private Text questMessageText;
@@ -90,6 +91,10 @@ namespace Results
 
 		private IEnumerator MessageSequence()
 		{
+			audioSource.clip = endGame;
+			audioSource.PlayOneShot(audioSource.clip);
+			yield return new WaitUntil(CheckIfAudioSourceIsNotPlaying);
+
 			player.MoveAway();
 
 			// Quest title //
