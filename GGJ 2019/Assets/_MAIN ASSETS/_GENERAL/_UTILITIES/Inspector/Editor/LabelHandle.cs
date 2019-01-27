@@ -1,4 +1,4 @@
-using UnityEngine;
+/* using UnityEngine;
 using UnityEditor;
 
 [CustomEditor(typeof(GameObject))]
@@ -14,4 +14,4 @@ public class LabelHandle : Editor
         if (transform.gameObject.GetComponent<NameHandle>() != null)
             Handles.Label(transform.position, transform.gameObject.name, style);
 }
-}
+} */
