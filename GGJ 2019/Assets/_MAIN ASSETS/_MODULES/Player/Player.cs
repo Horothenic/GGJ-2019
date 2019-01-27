@@ -81,7 +81,7 @@ namespace Game
 
 		private IEnumerator WaitForHit()
 		{
-			yield return new WaitForSeconds (0.8f);
+			yield return new WaitForSeconds (1.2f);
 			enableHit = true;
 		}
 
@@ -99,12 +99,22 @@ namespace Game
 			}
 		}
 
-		void OnCollisionEnter(Collision collision)
+		void OnTriggerStay(Collider collider)
 		{
-			audioSource.clip = wallHit;
-			audioSource.PlayOneShot(audioSource.clip);
-			audioSource.enabled = false;
-			audioSource.enabled = true;
+			if (collider.tag == "Wall")
+			{
+				if (enableHit)
+				{
+					enableHit = false;
+					
+					audioSource.clip = wallHit;
+					audioSource.PlayOneShot(audioSource.clip);
+					audioSource.enabled = false;
+					audioSource.enabled = true;
+
+					StartCoroutine (WaitForHit());
+				}
+			}
 		}
 
 		void OnTriggerExit(Collider collider)
