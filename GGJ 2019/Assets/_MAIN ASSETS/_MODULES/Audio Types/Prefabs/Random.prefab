@@ -201,7 +201,7 @@ MonoBehaviour:
   gainDb: 0
   nearFieldEffectEnabled: 0
   nearFieldEffectGain: 1
-  occlusionEnabled: 0
+  occlusionEnabled: 1
   occlusionIntensity: 1
   quality: 2
 --- !u!114 &114791736945056192
