@@ -58,6 +58,8 @@ namespace Screens
 
 		private IEnumerator AppearCanvasGroupHeadphones()
 		{
+			yield return new WaitForSeconds(2f);
+
 			Transition.FadeInCanvasGroup (canvasGroupHeadphones, 1f, false);
 
 			audioSource.clip = audioClipHeadphones;
