@@ -32,6 +32,15 @@ namespace GGJ
 			}
 		}
 
+		void OnTriggerExit(Collider collider)
+		{
+			if (collider.tag == "Player" && !audioSource.isPlaying)
+			{
+				audioSource.enabled = false;
+				audioSource.enabled = true;
+			}
+		}
+
 		#endregion
 	}
 }
