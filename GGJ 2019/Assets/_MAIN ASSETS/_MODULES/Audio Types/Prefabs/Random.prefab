@@ -25,6 +25,7 @@ GameObject:
   - component: {fileID: 114189055866491980}
   - component: {fileID: 114289329906988728}
   - component: {fileID: 114791736945056192}
+  - component: {fileID: 114224750251140686}
   m_Layer: 0
   m_Name: Random
   m_TagString: Untagged
@@ -203,6 +204,18 @@ MonoBehaviour:
   simulationMode: 1
   indirectMixFraction: 1
   indirectBinauralEnabled: 1
+--- !u!114 &114224750251140686
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1436280005612066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d3612aa1a7334e1897c6a1280644676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shieldArea: 0
 --- !u!114 &114289329906988728
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -240,5 +253,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af6f68696c1504d04aa710f12923cff7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  shieldArea: 0
   delay: 2
   percentage: 50
