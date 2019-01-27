@@ -99,7 +99,12 @@ namespace UnityStandardAssets.Characters.FirstPerson
             float speed;
             GetInput(out speed);
             // always move along the camera forward as it is the direction that it being aimed at
-            Vector3 desiredMove = transform.forward*m_Input.y + transform.right*m_Input.x;
+            //Vector3 desiredMove = transform.forward*m_Input.y + transform.right*m_Input.x;
+            
+            Vector3 desiredMove = transform.forward*m_Input.y;
+
+            transform.Rotate (Vector3.up * m_Input.x * Time.deltaTime * 90f);
+
 
             // get a normal for the surface that is being touched to move along it
             RaycastHit hitInfo;
@@ -132,7 +137,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
             ProgressStepCycle(speed);
             UpdateCameraPosition(speed);
 
-            m_MouseLook.UpdateCursorLock();
+            //m_MouseLook.UpdateCursorLock();
         }
 
 
@@ -248,7 +253,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void RotateView()
         {
-            m_MouseLook.LookRotation (transform, m_Camera.transform);
+            //m_MouseLook.LookRotation (transform, m_Camera.transform);
         }
 
 

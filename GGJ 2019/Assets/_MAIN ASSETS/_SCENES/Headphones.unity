@@ -633,7 +633,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Toca la pantalla para iniciar.
+  m_Text: Presiona la barra espaciadora para iniciar.
 --- !u!222 &1629970240
 CanvasRenderer:
   m_ObjectHideFlags: 0
